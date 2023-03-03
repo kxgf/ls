@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+}
+div{
+    color: #808080;
+}
+.a{
+    height: 200px;
+    line-height: 200px;
+}
+a{
+    border-radius: 10px;
+    background: #00ffea;
+    padding: 10px;
+
+}
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
