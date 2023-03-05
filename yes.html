@@ -10,9 +10,23 @@
     <body>
         <script>
             var sdname = prompt(`姓名`);
-            let dom =`
-            <h1>恭喜${sdname}同学完成了特殊作业。</h1>`
-            document.body.innerHTML+=dom
+            //新建变量sdname
+            if(sdname != ``){
+            let accomplish =`<b>恭喜${sdname}同学完成了特殊作业。</b>`
+            //新建列表accomplish
+            document.body.innerHTML+=accomplish
+            //把列表添加到html中
+            console.log(`ok`)
+            } else {
+                let a =`<b>请正确填写姓名</b>
+            <p>Please fill in your name correctly</p>
+            <a class="a" href="index.html"><b>重新回答></b></a>
+            `
+            //新建列表a
+            document.body.innerHTML+=a
+            //把列表添加到html中
+            console.log(`ok`)
+            }
         </script>
             <div class="disclaimer"><p>注:一切解释权由开发者和根据开源条例再次的开发者所有！</p></div>
     </body>
