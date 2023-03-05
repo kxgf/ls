@@ -2,9 +2,7 @@ body{
     background-color: black;
     color: white;
 }
-div{
-    color: #808080;
-}
+
 .a{
     height: 200px;
     line-height: 200px;
@@ -25,4 +23,9 @@ a:visited{
 
 a:hover{
     color: rgb(255, 0, 0);
+}
+
+.isclaimer{
+    color: #808080;
+    text-align: center;
 }
