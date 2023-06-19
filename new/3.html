@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>特殊的历史作业</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="utf-8">
+        <script>
+            function checkAnswer(answer) {
+                if (answer === "D.八股取士导致明清时期科技发展滞后") {
+                    window.location.href = "4.html";
+                } else {
+                    window.location.href = "404.html";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>3.由下表可知</h1>
+        <table>
+            <tr>
+                <th>时期</th>
+                <th>世界主要科技发明（件）</th>
+                <th>中国科技发明（件）</th>
+                <th>占百分比</th>
+            </tr>
+            <tr>
+                <td>汉代</td>
+                <td>45</td>
+                <td>28</td>
+                <td>62%</td>
+            </tr>
+            <tr>
+                <td>隋唐</td>
+                <td>45</td>
+                <td>32</td>
+                <td>71%</td>
+            </tr>
+            <tr>
+                <td>宋元</td>
+                <td>67</td>
+                <td>38</td>
+                <td>57%</td>
+            </tr>
+            <tr>
+                <td>明清</td>
+                <td>472</td>
+                <td>19</td>
+                <td>4%</td>
+            </tr>
+        </table>
+        <p>
+            <button onclick="checkAnswer('A.我国古代科技发展水平始终领先世界')">A.我国古代科技发展水平始终领先世界</button>
+            <button onclick="checkAnswer('B.西汉北击匈奴促进汉朝科技水平提高')">B.西汉北击匈奴促进汉朝科技水平提高</button>
+            <button onclick="checkAnswer('C.民族关系和谐促使宋元时期科技领先')">C.民族关系和谐促使宋元时期科技领先</button>
+            <button onclick="checkAnswer('D.八股取士导致明清时期科技发展滞后')">D.八股取士导致明清时期科技发展滞后</button>
+        </p>
+    </body>
+</html>

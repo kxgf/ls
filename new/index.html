@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>特殊的历史作业</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="utf-8">
+        <script>
+            function checkAnswer(answer) {
+                if (answer === "B.君主专制加强") {
+                    window.location.href = "2.html";
+                } else {
+                    window.location.href = "404.html";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>1.明太祖时期将《孟子》一书中“非臣子所宜言”的内容尽行删去，慕成《孟子节文》，颁行天下，作为科举考试的内容。这反映了明初</h1>
+        <p>
+            <button onclick="checkAnswer('A.科举制度完善')">A.科举制度完善</button>
+            <button onclick="checkAnswer('B.君主专制加强')">B.君主专制加强</button>
+            <button onclick="checkAnswer('C.儒家地位提升')">C.儒家地位提升</button>
+            <button onclick="checkAnswer('D.图书出版发达')">D.图书出版发达</button>
+        </p>
+    </body>
+</html>

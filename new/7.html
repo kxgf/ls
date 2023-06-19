@@ -1,0 +1,45 @@
+<head>
+
+    <title>特殊的历史作业</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta charset="utf-8">
+
+    <script>
+
+        function checkAnswer(answer) {
+
+            if (answer === "C") {
+
+                window.location.href = "yes.html";
+
+            } else {
+
+                window.location.href = "404.html";
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>据史书记载，从1407年到1422年短短十多年间，有南洋多国使者多次搭乘船只访华。与南洋使者访华有关联的事件是</h1>
+
+    <p>
+
+        <button onclick="checkAnswer('A')">A.马可.波罗来华</button>
+
+        <button onclick="checkAnswer('B')">B.荷兰人抵达台湾</button>
+
+        <button onclick="checkAnswer('C')">C.郑和下西洋</button>
+
+        <button onclick="checkAnswer('D')">D.葡萄牙人到达澳门</button>
+
+    </p>
+
+</body>
