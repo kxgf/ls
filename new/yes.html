@@ -15,32 +15,11 @@
   URL.revokeObjectURL(temp_url);
   return uuid.substr(uuid.lastIndexOf("/") + 1);
             }
-            //新建变量sdname
-            if(sdname != ''){
-            if(sdname !='null'){
-                   var yzm="";
-       for(var i=0;i<6;i++)
-       {
-          Num+=Math.floor(Math.random()*10);
-       }
-            let accomplish =`<b>恭喜你完成了作业，请复制完下文中的ID和对本页面截图后，点击<a href="weixin://dl/business/?ticket=yuyue.wjx.top/vm/hfW0IWI.aspx#">这里</a>打开上传结果网页。<p>id:uuid()</p><p>验证码:$(yzm)</p></b>`
+                   var yzm="Math.random()";
+            let accomplish =`<b>恭喜你完成了作业，请复制完下文中的ID和对本页面截图后，点击<a href="weixin://dl/business/?ticket=yuyue.wjx.top/vm/hfW0IWI.aspx#">这里</a>打开上传结果网页。<p>id:uuid()</p><p>验证码:$yzm</p></b>`
             //新建列表accomplish
             document.body.innerHTML+=accomplish
-            //把列表添加到html中
-            console.log('ok')
-            } else {
-            let a ='<b>请正确填写姓名</b><p>Please fill in your name correctly</p><a class="a" href="index.html"><b>重新回答></b></a>'
-            //新建列表a
-            document.body.innerHTML+=a
-            //把列表添加到html中
-            console.log('ok')}
-            } else {
-            let a ='<b>请正确填写姓名</b><p>Please fill in your name correctly</p><a class="a" href="index.html"><b>重新回答></b></a>'
-            //新建列表a
-            document.body.innerHTML+=a
-            //把列表添加到html中
-            console.log('ok')
-            }
+            //把列表添加到文中
         </script>
             <div class="disclaimer"><p>注:一切解释权由开发者和根据开源条例再次的开发者所有！</p></div>
     </body>
