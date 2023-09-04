@@ -9,23 +9,25 @@
     </head>
     <body>
         <script>
-            var sdname = prompt(`姓名`);
+            function uuid() {
+  var temp_url = URL.createObjectURL(new Blob());
+  var uuid = temp_url.toString(); // blob:https://xxx.com/b250d159-e1b6-4a87-9002-885d90033be3
+  URL.revokeObjectURL(temp_url);
+  return uuid.substr(uuid.lastIndexOf("/") + 1);
+            }
             //新建变量sdname
             if(sdname != ''){
             if(sdname !='null'){
-            if(sdname !="梁浩昀"){
-            let accomplish =`<b>恭喜${sdname}同学完成了特殊作业。</b>`
+                   var yzm="";
+       for(var i=0;i<6;i++)
+       {
+          Num+=Math.floor(Math.random()*10);
+       }
+            let accomplish =`<b>恭喜你完成了作业，请复制完下文中的ID和对本页面截图后，点击<a href="weixin://dl/business/?ticket=yuyue.wjx.top/vm/hfW0IWI.aspx#">这里</a>打开上传结果网页。<p>id:uuid()</p><p>验证码:$(yzm)</p></b>`
             //新建列表accomplish
             document.body.innerHTML+=accomplish
             //把列表添加到html中
             console.log('ok')
-            } else {
-            let a ='<b>因为你在试卷上的留言，所以你需要完成附加题。</b><a class="a" href="kxgf.github.io/fjt"><b>回答附加题></b></a>'
-            //新建列表a
-            document.body.innerHTML+=a
-            //把列表添加到html中
-            console.log('ok')  
-            }
             } else {
             let a ='<b>请正确填写姓名</b><p>Please fill in your name correctly</p><a class="a" href="index.html"><b>重新回答></b></a>'
             //新建列表a
